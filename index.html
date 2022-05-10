@@ -28,17 +28,68 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="wrapper">
-                <h1 class="digitando">Willian Junior </h1>
+            <div class="grid-vitrine">
+                <div class="wrapper">
+                    <h1 class="digitando">Willian Junior </h1>
+                    <h3>Desenvolvedor em constante <span>evolução</span></h3>
+                </div>
+                <div class="rocket">
+                    <img src="./img/18350-stay-home.gif" alt="">
+                </div>
             </div>
-            <h3>Desenvolvedor em constante <span>evolução</span></h3>
+            
+            <div id="about">
+                <i id="close" class="fa-solid fa-xmark"></i>
+                <h3>Hello!</h3>
+                <p>Me chamo Willian Junior, tenho 24 anos, sou formado em gestão de Ti pela Unip. Trabalhei por 8 anos na área do comércio varejista e como primeira experiencia na área de ti, trabalhei por 6 meses como programador em uma agência digital.</p>
+                <button> Para Acessar o meu Curriculo</button>
+
+                <h3>Habilidades</h3>
+                <div class="grid-habilidades">
+                    <div class="grid-item">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa-brands fa-js"></i>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa-brands fa-react"></i>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa-brands fa-wordpress"></i>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <i id="close" class="fa-solid fa-xmark"></i>
+                ...
+            </div>
+            <div id="contact">
+                <i  id="close" class="fa-solid fa-xmark" onclick="close()"></i>
+                ...
+            </div>
+
             <div class="footer">
                 <div class="menu-footer">
-                    <a onclick=>Home</a>
-                    <a href="">About</a>
-                    <a href="">Projects</a>
-                    <a href="">Contact</a>
+                    <ul>
+                        <li class="menu-item menu-active" onclick="menuActive(0)">Home</li>
+                        <li class="menu-item" onclick="menuActive(1)">About</li>
+                        <li class="menu-item" onclick="menuActive(2)">Projects</li>
+                        <li class="menu-item" onclick="menuActive(3)">Contact</li>
+                    </ul>
                 </div>
                 <div class="icon">
                     <i class="fa-brands fa-github"></i>
