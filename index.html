@@ -1,110 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Willian Junior</title>
-</head>
-<body>
-    <main>
-        <div class="container">
-            <div class="menu">
-                <div class="nav-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-mobile">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid-vitrine">
-                <div class="wrapper">
-                    <h1 class="digitando">Willian Junior </h1>
-                    <h3>Desenvolvedor em constante <span>evolução</span></h3>
-                </div>
-                <div class="rocket">
-                    <img src="./img/18350-stay-home.gif" alt="">
-                </div>
-            </div>
-            
-            <div id="about">
-                <i id="close" class="fa-solid fa-xmark"></i>
-                <h3>Hello!</h3>
-                <p>Me chamo Willian Junior, tenho 24 anos, sou formado em gestão de Ti pela Unip. Trabalhei por 8 anos na área do comércio varejista e como primeira experiencia na área de ti, trabalhei por 6 meses como programador em uma agência digital.</p>
-                <button> Para Acessar o meu Curriculo</button>
-
-                <h3>Habilidades</h3>
-                <div class="grid-habilidades">
-                    <div class="grid-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <progress value="70" max="100"></progress>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-brands fa-js"></i>
-                        <progress value="70" max="100"></progress>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <progress value="70" max="100"></progress>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-brands fa-react"></i>
-                        <progress value="70" max="100"></progress>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <progress value="70" max="100"></progress>
-                    </div>
-                    <div class="grid-item">
-                        <i class="fa-brands fa-wordpress"></i>
-                        <progress value="70" max="100"></progress>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+        <title>Willian Junior</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="menu">
+                    <div class="menu-mobile">
+                        <div class="nav-menu">
+                            <span id="menu-x"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul>
+                            <li class="menu-item menu-active" onclick="menuActive(0)">Home</li>
+                            <li class="menu-item" onclick="menuActive(1)">About</li>
+                            <li class="menu-item" onclick="menuActive(2)">Projects</li>
+                            <li class="menu-item" onclick="menuActive(3)">Contact</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div id="projects">
-                <i id="close" class="fa-solid fa-xmark"></i>
-                ...
-            </div>
-            <div id="contact">
-                <i  id="close" class="fa-solid fa-xmark" onclick="close()"></i>
-                ...
-            </div>
-
-            <div class="footer">
-                <div class="menu-footer">
-                    <ul>
-                        <li class="menu-item menu-active" onclick="menuActive(0)">Home</li>
-                        <li class="menu-item" onclick="menuActive(1)">About</li>
-                        <li class="menu-item" onclick="menuActive(2)">Projects</li>
-                        <li class="menu-item" onclick="menuActive(3)">Contact</li>
-                    </ul>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
+                <div class="grid-vitrine">
+                    <div class="wrapper">
+                        <h1 class="digitando">Willian Junior</h1>
+                        <h3>
+                            Desenvolvedor em constante <span>evolução</span>
+                        </h3>
+                    </div>
+                    <div class="rocket">
+                        <img src="./assets/img/18350-stay-home.gif" alt="" />
+                    </div>
                 </div>
 
-                
+                <div id="about">
+                    <i
+                        id="close"
+                        class="fa-solid fa-xmark"
+                        onclick="closeModal()"
+                    ></i>
+                    <div class="about-header">
+                        <div class="about-img">
+                            <img src="./assets/img/will.jpg" alt="" srcset="" />
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                <strong
+                                    >Hello!! Seja bem vindo ao meu
+                                    portfólio.</strong
+                                ><br />
+                                <br />
+                                Me chamo Willian Junior, tenho 24 anos, sou
+                                formado em gestão de Ti pela Unip. Trabalhei por
+                                8 anos na área do comércio varejista e como
+                                primeira experiencia na área de ti, trabalhei
+                                por 6 meses como programador em uma agência
+                                digital.
+                            </p>
+                            <button type="button" href="">
+                                <a
+                                    href="./assets/docs/WillianjuniorTi.pdf"
+                                    target="_blank"
+                                    >Acessar o meu Curriculo</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <h3>Habilidades</h3>
+                    <div class="grid-habilidades">
+                        <div class="grid-item">
+                            <div class="desc-skill">
+                                <img src="./assets/img/html.svg" alt="">
+                                <img src="./assets/img/css.svg" alt="">
+                                <span>HTML / CSS</span>
+                            </div>
+
+                            <progress value="70" max="100"></progress>
+                        </div>
+                        <div class="grid-item">
+                            <div class="desc-skill">
+                                <img src="./assets/img/js.svg" alt="">
+                                <span>JavaScript</span>
+                            </div>
+
+                            <progress value="70" max="100"></progress>
+                        </div>
+                        <div class="grid-item">
+                            <div class="desc-skill">
+                                <img src="./assets/img/bootstrap.svg" alt="">
+                                <span>Bootstrap</span>
+                            </div>
+                            <progress value="70" max="100"></progress>
+                        </div>
+                        <div class="grid-item">
+                            <div class="desc-skill">
+                                <img src="./assets/img/react.svg" alt="">
+                                <span>React</span>
+                            </div>
+                            <progress value="70" max="100">70%</progress>
+                        </div>
+                        <div class="grid-item">
+                            <div class="desc-skill">
+                                <img src="./assets/img/git.svg" alt="">
+                                <span>Git</span>
+                            </div>
+                            <progress value="70" max="100"></progress>
+                        </div>
+                        <div class="grid-item">
+                            <div class="desc-skill">
+                                <img src="./assets/img/wordpress.svg" alt="">
+                                <span>WordPress</span>
+                            </div>
+                            <progress value="70" max="100"></progress>
+                        </div>
+                        <div class="grid-item">
+                            <div class="desc-skill">
+                                <img src="./assets/img/typescript.svg" alt="">
+                                <span>TypeScript</span>
+                            </div>
+                            <progress value="70" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects">
+                    <i
+                        id="close"
+                        class="fa-solid fa-xmark"
+                        onclick="closeModal()"
+                    ></i>
+                    <h3>Meus Projetos</h3>
+                    <div class="grid-projects">
+                        <div class="grid-item">
+                            <h5>Jogo da Memória</h5>
+                            Projeto feito por meio de estudo, com foco no uso de
+                            useState e useEffect do framework React.
+                            <button><a href=""> Clique aqui</a></button>
+                        </div>
+                        <div class="grid-item">
+                            <h5>Site StarBucks</h5>
+                            Site feito para treino do HTML e CSS.
+                            <button><a href=""> Clique aqui</a></button>
+                        </div>
+                        <div class="grid-item">
+                            <h5>Snake Game</h5>
+                            <p>
+                                Jogo feito em JavaScript, feito atraves de um
+                                bootcamp da <a href="">Dio.</a>
+                            </p>
+                            <button><a href=""> Clique aqui</a></button>
+                        </div>
+                        <div class="grid-item">
+                            <h5>Calculadora de IMC</h5>
+                            Projeto Feito em React.
+                            <button><a href=""> Clique aqui</a></button>
+                        </div>
+                        <div class="grid-item">
+                            <h5>Menu Pizza</h5>
+                            Menu de Pizza feito em HTML, CSS e JavaScript.
+                            <button><a href=""> Clique aqui</a></button>
+                        </div>
+                        <div class="grid-item">
+                            <h5>Site Canil</h5>
+                            Projeto feito em estudo introdutório ao NodeJs.
+                            <button><a href=""> Clique aqui</a></button>
+                        </div>
+                        <div class="grid-item">
+                            <h5>Clone Netflix</h5>
+                            Site feito para praticar CSS e HTML.
+                            <button><a href=""> Clique aqui</a></button>
+                        </div>
+                        <div class="grid-item">
+                            <h5>Urna Eletrônica</h5>
+                            Projeto ultilizando HTML, CSS e JavaScript.
+                            <button><a href=""> Clique aqui</a></button>
+                        </div>
+                    </div>
+                </div> 
+                <div id="contact">
+                    <i
+                        id="close"
+                        class="fa-solid fa-xmark"
+                        onclick="closeModal()"
+                    ></i>
+                    <div class="grid-contact">
+                        <div class="contact-info">
+                            <span>
+                                <a href="">
+                                    <img src="./assets/img/phone.svg" alt="" srcset="">
+                                    Telefone : (15) 99837-5725
+                                </a>
+                            </span>
+                            <span>
+                                <a href="">
+                                    <img src="./assets/img/whats.svg" alt="" srcset="">
+                                    Whatsapp : (15) 99809-5916
+                                </a>
+                            </span>
+                            <span>
+                                <a href=""><img src="./assets/img/email.svg" alt="" srcset="">
+                                    Email : willian9jr@hotmail.com
+                                </a>  
+                            </span>
+                            <span>
+                                <a href="">
+                                    <img src="./assets/img/linkedIn.svg" alt="" srcset="">
+                                    LinkedIn
+                                </a>
+                            </span>
+                            <span> 
+                                <a href="https://github.com/willian9jr" target="_blank">
+                                    <img src="./assets/img/github.svg" alt="" srcset="">
+                                    GitHub
+                                </a>
+                            </span>
+                        </div>
+                        <div class="contact-img">
+                            <img src="./assets/img/call.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="menu-footer">
+                        <ul>
+                            <li class="menu-item menu-active" onclick="menuActive(0)">Home</li>
+                            <li class="menu-item" onclick="menuActive(1)">About</li>
+                            <li class="menu-item" onclick="menuActive(2)">Projects</li>
+                            <li class="menu-item" onclick="menuActive(3)">Contact</li>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <a href="https://github.com/willian9jr" target="_blank"><i class="fa-brands fa-github" target="_blank"></i></a>
+                        <a href="https://wa.me/15998095916" target="_blank"><i class="fa-brands fa-whatsapp"> </i></a>
+                    </div>
+                </div>
             </div>
-        </div>    
-    </main>
-    <footer>
-        
-    </footer>
-    
-    <script src="https://kit.fontawesome.com/1beee4c5c2.js" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-</body>
+        </main>
+        <footer></footer>
+
+        <script
+            src="https://kit.fontawesome.com/1beee4c5c2.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script.js"></script>
+    </body>
 </html>
