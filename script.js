@@ -7,15 +7,17 @@ const projects = document.querySelector("#projects");
 const footer = document.querySelector(".footer");
 const vitrine = document.querySelector(".grid-vitrine");
 const menuX = document.querySelector("#menu-x");
+const larguraTela = window.screen.width;
+
 
 navMenu.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     if (menuMobile.style.width == "150px") {
         menuMobile.style.width = "0";
-        vitrine.style.opacity= "1";
+        // vitrine.style.visibility= 'visible';
     } else {
         menuMobile.style.width = "150px";
-        vitrine.style.opacity = "0.1";
+        // vitrine.style.visibility="hidden";
     }
 });
 
@@ -68,10 +70,11 @@ function menuActive(n) {
 }
 
 function closeModal() {
-    // if(menuX.style.display == "none"){
-    //     footer.style.display = 'flex';
-    // }
-    
+    footer.style.display = 'flex';
+    if(larguraTela < 430){
+        footer.style.display = 'none'
+    }
+
     contact.style.display = "none";
     if (contact.classList == "menu-active") {
         contact.classList.remove("menu-active");
