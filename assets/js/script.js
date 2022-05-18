@@ -14,10 +14,8 @@ navMenu.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     if (menuMobile.style.width == "150px") {
         menuMobile.style.width = "0";
-        // vitrine.style.visibility= 'visible';
     } else {
         menuMobile.style.width = "150px";
-        // vitrine.style.visibility="hidden";
     }
 });
 
@@ -59,14 +57,6 @@ function menuActive(n) {
             projects.style.display = "none";
             break;
     }
-
-    // for (let i in menuItem) {
-    //     if (menuItem[i] !== menuItem[n]) {
-    //         menuItem[i].classList.remove("menu-active");
-    //     } else {
-    //         menuItem[n].classList.add("menu-active");
-    //     }
-    // }
 }
 
 function closeModal() {
@@ -74,7 +64,6 @@ function closeModal() {
     if(larguraTela < 430){
         footer.style.display = 'none'
     }
-
     contact.style.display = "none";
     if (contact.classList == "menu-active") {
         contact.classList.remove("menu-active");

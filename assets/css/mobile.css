@@ -36,6 +36,29 @@
     }
 }
 
+@media (max-width:600px){
+    .grid-vitrine{
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .rocket img{
+        margin-top: 50px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer li{
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 @media(max-width:430px) {
