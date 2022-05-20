@@ -9,6 +9,7 @@ const vitrine = document.querySelector(".grid-vitrine");
 const menuX = document.querySelector("#menu-x");
 const larguraTela = window.screen.width;
 
+console.log(menuItem);
 
 navMenu.addEventListener("click", () => {
     navMenu.classList.toggle("active");
@@ -20,11 +21,14 @@ navMenu.addEventListener("click", () => {
 });
 
 function menuActive(n) {
+    
+    about.style.display = "none";
+    contact.style.display = "none";
+    projects.style.display = "none";
+    setTimeout(() => {footer.style.display = 'none'}, 400);
+
     switch (menuItem[n]) {
         case menuItem[1]:
-            contact.style.display = "none";
-            projects.style.display = "none";
-            footer.style.display = 'none';
             if (about.style.display == "block") {
                 about.style.display = "none";
             } else {
@@ -32,9 +36,6 @@ function menuActive(n) {
             }
             break;
         case menuItem[2]:
-            contact.style.display = "none";
-            about.style.display = "none";
-            footer.style.display = 'none';
             if (projects.style.display == "block") {
                 projects.style.display = "none";
             } else {
@@ -42,9 +43,6 @@ function menuActive(n) {
             }
             break;
         case menuItem[3]:
-            about.style.display = "none";
-            projects.style.display = "none";
-            footer.style.display = 'none';
             if (contact.style.display == "block") {
                 contact.style.display = "none";
             } else {
@@ -52,9 +50,7 @@ function menuActive(n) {
             }
             break;
         default:
-            contact.style.display = "none";
-            about.style.display = "none";
-            projects.style.display = "none";
+            footer.style.display = 'flex';
             break;
     }
 }

@@ -1,3 +1,9 @@
+@media (max-width:825px ){
+    .grid-projects .grid-item p{
+        height: 80px;
+    }
+}
+
 @media (max-width: 770px) {
     .digitando {
         font-size: 40px;

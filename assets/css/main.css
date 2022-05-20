@@ -329,10 +329,10 @@ main {
 
 .about-text strong {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .about-text p{
-    /* width: 500px; */
     font-size: 14px;
     text-align: justify;
 }
@@ -344,7 +344,7 @@ main {
     border:none;
     border-radius: 3px;
     box-shadow: 5px 5px 15px 5px;
-    margin: 20px;
+    margin: 5px;
 }
 
 .about-text button a{
@@ -434,9 +434,9 @@ main {
     background-color: #23B8B3;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
-    font-size: 14px;
-    padding: 20px;
-    text-align:justify;
+    font-size: 12px;
+    padding: 10px;
+    text-align:center;
 }
 
 .grid-projects .grid-item:hover{
@@ -448,15 +448,15 @@ main {
       transform: scale(1);
     }
     100% {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
   }
 
 .grid-projects .grid-item h5{
     font-size: 20px;
     margin: 0 0 10px 0;
+    text-align: center;
 }
-
 
 .grid-projects .grid-item button{
     width: 100px;
@@ -469,6 +469,11 @@ main {
 
 .grid-projects .grid-item p{
     margin: 0;
+    
+}
+
+.grid-projects .grid-item p a{
+    color: #fff !important ;
 }
 
 .grid-projects .grid-item button a, .grid-projects .grid-item p a{
